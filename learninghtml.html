@@ -22,215 +22,229 @@
 
     <body><!-- ! contains all the things has to be shown on webpage -->
 
-        <!-- ! Header tags -->
+        <main>
 
-        <h1>Biggest</h1>
-        
-        <!-- * p tags, also known as paragraph tags are used for groping together texts and other elements and for seperating such elements -->
+            <!-- ! Header tags -->
 
-        <p>This is text in paragraph tag</p>
-
-        <h2>Big</h2> <!-- * sub heading -->
-
-        <p>This is also text in para tag but in new line</p>
-
-        <h3>Small</h3> <!-- * sub sub heading -->
-
-        <h4>Smaller</h4> <!-- * you get the point... -->
-
-        <h5>Smallest</h5> <!-- * They are the headings under which p tags are used -->
-
-        <h6>Very small</h6>
-
-        <!-- ! Lists -->
-
-        <!-- * 2 types of lists in HTML: Unordered(Bullet Points) & Ordered(Numbered) Lists -->
-
-        <!-- * Those lists have the same children tags such as li, script and template -->
-
-        <!-- ! Unordered Lists -->
-
-        <ul> <!-- * unordered list -->
-
-            <li>First</li> <!-- * li = list item (Mandatory for lists) -->
-
-            <li>Second</li>
+            <h1>Biggest</h1>
             
-            <li>Third</li>
+            <!-- * p tags, also known as paragraph tags are used for groping together texts and other elements and for seperating such elements -->
 
-        </ul>
+            <p>This is text in paragraph tag</p>
 
-        <!-- ! Ordered Lists -->
+            <h2>Big</h2> <!-- * sub heading -->
 
-        <ol>
+            <p>This is also text in para tag but in new line</p>
 
-            <li>One</li>
+            <h3>Small</h3> <!-- * sub sub heading -->
+
+            <h4>Smaller</h4> <!-- * you get the point... -->
+
+            <h5>Smallest</h5> <!-- * They are the headings under which p tags are used -->
+
+            <h6>Very small</h6>
+
+            <!-- ! Lists -->
+
+            <!-- * 2 types of lists in HTML: Unordered(Bullet Points) & Ordered(Numbered) Lists -->
+
+            <!-- * Those lists have the same children tags such as li, script and template -->
+
+            <!-- ! Unordered Lists -->
+
+            <ul> <!-- * unordered list -->
+
+                <li>First</li> <!-- * li = list item (Mandatory for lists) -->
+
+                <li>Second</li>
+                
+                <li>Third</li>
+
+            </ul>
+
+            <!-- ! Ordered Lists -->
+
+            <ol>
+
+                <li>One</li>
+                
+                <li>Two</li>
+                
+                <li>Three</li>
+
+            </ol>
+
+            <!-- * We can put list tags inside the li tags to create: -->
+
+            <!-- ! Nested Lists -->
+
+            <ol>
+
+                <li>
+
+                    <ul>
+
+                        <li>h</li>
+                        
+                        <li>e</li>
+                        
+                        <li>l</li>
+
+                    </ul>
+
+                </li>
+                
+                <li>l</li>
+                
+                <li>o</li>
+
+            </ol>
+
+            <!-- ! Anchor Tags -->
+
+            <!-- * They holds links to go to other webpages or websites -->
+
+            <!-- * They don't create a new line of their own as they fit in the line(Like the clickable words we see on wikipedia) -->
+
+            <!-- * We can use href to refer to other html files we have on the local system -->
+
+            <!-- * href = hypertext reference -->
+
+            <a href="https://www.google.com">Link to Google</a>
+
+            <!-- * The href attribute contains the link to go to the website -->
+
+            <!-- * For a link of a website on the internet, we need to include the https protocal -->
+
+            <!-- * Else just writing google.com, it searches for a file of the same name on the local system -->
+
+            <!-- ! Images in HTML -->
+
+            <!-- * We can add images to html using image tag -->        
+
+            <!-- * img tag doesn't have it's complementary closing tag -->
+
+            <img src="cat.png" alt="It's a cat pic">
+
+            <!-- * src = source : tells us where the image is present and presents that in the webpage(we can use images over the internet by copying their links over the internet) -->
+
+            <!-- * alt = alternate : If the image doesn't load, the text will be shown which describes the pic(also used by screen readers) -->
             
-            <li>Two</li>
+            <!-- ! Div Tags -->
+
+            <!-- * Div or Content Divider is used for grouping together tags in a separate block -->
+
+            <!-- * div is used a lot for css -->
+
+            <!-- * div is a block element -->
+
+            <!-- * that's why it takes a whole block to itself to fit all the tags it it -->
+
+            <div>
+
+                <p>In a div block</p>
+
+                <p>All the tags here can be brought together properly using css</p>
+                
+                <img src="cat.png" alt="same cat">
+                
+            </div>
             
-            <li>Three</li>
+            <a href="nothinghere">Everthing is in a block when looking at the Inspector tools</a>
 
-        </ol>
+            <!-- * The img is in another block and doesn't allow anchor tag to be in the same line because it's in a div -->
 
-        <!-- * We can put list tags inside the li tags to create: -->
+            <!-- * If anchor tag and img were in the same line, the anchor tag would continue directly after the img, which we don't want -->
 
-        <!-- ! Nested Lists -->
+            <!-- ! Span Tags -->
 
-        <ol>
+            <!-- * In line element -->
 
-            <li>
+            <!-- * Used to specify or single out content present in other tags so that we can style it in CSS -->
 
-                <ul>
+            <p>Hello, this is <span>span</span></p>
 
-                    <li>h</li>
-                    
-                    <li>e</li>
-                    
-                    <li>l</li>
+            <!-- * Nothing changes to the word span as we have not linked it to any css file yet -->
 
-                </ul>
+            <!-- ! HR Tags -->
 
-            </li>
-            
-            <li>l</li>
-            
-            <li>o</li>
+            <!-- * HR = horizontal rule = just adds a line to seperate stuff -->
 
-        </ol>
+            <!-- * Doesn't have a closing tag -->
 
-        <!-- ! Anchor Tags -->
+            <h1>For Example</h1>
 
-        <!-- * They holds links to go to other webpages or websites -->
+            <hr>
 
-        <!-- * They don't create a new line of their own as they fit in the line(Like the clickable words we see on wikipedia) -->
+            <p>The above line can be styled using CSS later</p>
 
-        <!-- * We can use href to refer to other html files we have on the local system -->
+            <!-- ! BR Tags -->
 
-        <!-- * href = hypertext reference -->
+            <!-- * BR = break = justs breaks the content, forcing it to the next line -->
 
-        <a href="https://www.google.com">Link to Google</a>
+            <!-- * Doesn't have any closing tag -->
 
-        <!-- * The href attribute contains the link to go to the website -->
+            <p>Well<br>It<br>is<br>what<br>it<br>is</p>
 
-        <!-- * For a link of a website on the internet, we need to include the https protocal -->
+            <!-- ! Sup tags -->
 
-        <!-- * Else just writing google.com, it searches for a file of the same name on the local system -->
+            <!-- * sup = superscript = used for pushing specified content above the baseline -->
 
-        <!-- ! Images in HTML -->
+            <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
 
-        <!-- * We can add images to html using image tag -->        
+            <!-- * We can add anchor tags using sup(like how wikipedia does it) -->
 
-        <!-- * img tag doesn't have it's complementary closing tag -->
+            <p>Reference.<sup><a href="referencesomething">[1]</a></sup></p>
 
-        <img src="cat.png" alt="It's a cat pic">
+            <!-- ! Sub Tags -->
 
-        <!-- * src = source : tells us where the image is present and presents that in the webpage(we can use images over the internet by copying their links over the internet) -->
+            <!-- * sub = subscript = used for pushing specified content below the baseline -->
 
-        <!-- * alt = alternate : If the image doesn't load, the text will be shown which describes the pic(also used by screen readers) -->
-         
-        <!-- ! Div Tags -->
+            <p>H<sub>2</sub>O</p>
 
-        <!-- * Div or Content Divider is used for grouping together tags in a separate block -->
+            <!-- ! Example Code using both Sub and Sup -->
 
-        <!-- * div is used a lot for css -->
+            <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
 
-        <!-- * div is a block element -->
+            <!-- ! Entity Codes/Names -->
 
-        <!-- * that's why it takes a whole block to itself to fit all the tags it it -->
+            <!-- * If we want to use characters which are already defined as reserved characters in HTML, we need to use Entity Codes -->
 
-        <div>
+            <!-- * Reserved Characters are <,>,/,&,;,etc. and other characters(Special Characters) which are not found on the keyboard -->
 
-            <p>In a div block</p>
+            <!-- * It always begins with a & and ends with a ; -->
 
-            <p>All the tags here can be brought together properly using css</p>
-            
-            <img src="cat.png" alt="same cat">
-            
-        </div>
-        
-        <a href="nothinghere">Everthing is in a block when looking at the Inspector tools</a>
+            <!-- * Between the & and ; the entity code or name is written to represent it in the webpage -->
 
-        <!-- * The img is in another block and doesn't allow anchor tag to be in the same line because it's in a div -->
+            <p>This is the &lt; less than operator &amp; this is the &gt; greater than operator</p>
 
-        <!-- * If anchor tag and img were in the same line, the anchor tag would continue directly after the img, which we don't want -->
+            <!-- * Just search up the characters you want to show on the page by asking for the entity codes/names on google -->
 
-        <!-- ! Span Tags -->
+            <!-- * For entity codes, it will be like &#somenumbershere; -->
 
-        <!-- * In line element -->
+            <!-- ! Semantic Markup -->
 
-        <!-- * Used to specify or single out content present in other tags so that we can style it in CSS -->
+            <!-- * In HTML code, we can't use div again and again for everything as they make accesibility i.e. screen readers and ourselves will not know what is what -->
 
-        <p>Hello, this is <span>span</span></p>
+            <!-- * So we have stuff like main,article,section,header,footer,nav,etc. which acts like a div but their names tell their purpose -->
 
-        <!-- * Nothing changes to the word span as we have not linked it to any css file yet -->
+            <!-- * This makes it easier for screen readers and other developers to know what tag they have to go to edit any particular thing and not just do through so many divs -->
 
-        <!-- ! HR Tags -->
+            <!-- * Semantic means Meaningful -->
 
-        <!-- * HR = horizontal rule = just adds a line to seperate stuff -->
+            <!-- * Those tags give meaning as they are named according to their purpose as stated before -->
 
-        <!-- * Doesn't have a closing tag -->
+            <!-- ! Main Tags -->
 
-        <h1>For Example</h1>
+            <!-- * This tag should contain all the content that must be shown -->
 
-        <hr>
+            <!-- * It doesn't contain the navigation, scrollbar and any other thing that repeated across all the webpages across a website -->
 
-        <p>The above line can be styled using CSS later</p>
+            <!-- * Basically, main should contain the 'main' content that is not repeated across different webpages -->
 
-        <!-- ! BR Tags -->
+            <!-- * Like in wikipedia, the content is put in main which the searchbar, navigation are excluded as they repeat across different pages -->
 
-        <!-- * BR = break = justs breaks the content, forcing it to the next line -->
-
-        <!-- * Doesn't have any closing tag -->
-
-        <p>Well<br>It<br>is<br>what<br>it<br>is</p>
-
-        <!-- ! Sup tags -->
-
-        <!-- * sup = superscript = used for pushing specified content above the baseline -->
-
-        <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
-
-        <!-- * We can add anchor tags using sup(like how wikipedia does it) -->
-
-        <p>Reference.<sup><a href="referencesomething">[1]</a></sup></p>
-
-        <!-- ! Sub Tags -->
-
-        <!-- * sub = subscript = used for pushing specified content below the baseline -->
-
-        <p>H<sub>2</sub>O</p>
-
-        <!-- ! Example Code using both Sub and Sup -->
-
-        <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
-
-        <!-- ! Entity Codes/Names -->
-
-        <!-- * If we want to use characters which are already defined as reserved characters in HTML, we need to use Entity Codes -->
-
-        <!-- * Reserved Characters are <,>,/,&,;,etc. and other characters(Special Characters) which are not found on the keyboard -->
-
-        <!-- * It always begins with a & and ends with a ; -->
-
-        <!-- * Between the & and ; the entity code or name is written to represent it in the webpage -->
-
-        <p>This is the &lt; less than operator &amp; this is the &gt; greater than operator</p>
-
-        <!-- * Just search up the characters you want to show on the page by asking for the entity codes/names on google -->
-
-        <!-- * For entity codes, it will be like &#somenumbershere; -->
-
-        <!-- ! Semantic Markup -->
-
-        <!-- * In HTML code, we can't use div again and again for everything as they make accesibility i.e. screen readers and ourselves will not know what is what -->
-
-        <!-- * So we have stuff like main,article,section,header,footer,nav,etc. which acts like a div but their names tell their purpose -->
-
-        <!-- * This makes it easier for screen readers and other developers to know what tag they have to go to edit any particular thing and not just do through so many divs -->
-
-        <!-- * Semantic means Meaningful -->
-
-        <!-- * Those tags give meaning as they are named according to their purpose as stated before -->
+        </main>
 
     </body>
 
