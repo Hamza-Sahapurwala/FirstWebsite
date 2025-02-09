@@ -342,13 +342,29 @@
 
                     <tr> <!-- * We have to put the header of each column in a row element(tr) -->
 
-                        <th>Word</th> <!-- * th = table head = makes the Content bold and this is the column header  -->
+                        <th rowspan="2">Word</th> <!-- * th = table head = makes the Content bold and this is the column header  -->
+
+                        <!-- * rowspan makes the above statement cover two rows of space(Vertical space) -->
                         
-                        <th>Comparison</th>
+                        <th colspan="2">Comparison</th>
+
+                        <!-- * colspan makes the above statement take two columns of space(Horizontal Space)  -->
                         
                         <th>Superlative</th>
 
                     </tr>
+
+                    <tr>
+
+                        <th>-er</th>
+
+                        <th>Comparing between 2 people</th>
+
+                    </tr>
+
+                    <!-- ! With the use of colspan and rowspan, we can keep 2 columns under 1 column -->
+
+                    <!-- * -er and Comparing between 2 people are below Comparison(just like we wanted) -->
 
                 </thead>
 
@@ -359,6 +375,8 @@
                         <td>Big</td> <!-- * td = table data = cells in a table -->
                         
                         <td>Bigger</td>
+
+                        <td>He is bigger than me</td>
                         
                         <td>Biggest</td>
 
@@ -369,6 +387,8 @@
                         <td>Small</td>
                         
                         <td>Smaller</td>
+
+                        <td>He is smaller than me</td>
                         
                         <td>Smallest</td>
                         
@@ -379,6 +399,8 @@
                         <td>Huge</td>
                         
                         <td>Huger</td>
+
+                        <td>He is huger than anyone</td>
                         
                         <td>Hugest</td>
                         
@@ -386,9 +408,9 @@
                     
                 </tbody>
 
-                <tfoot> <!-- ! Semantic element which just says that this is the foot of the table(Use only when displaying content such as Total,Average and stuff otherwise don't use) -->
+                <!-- <tfoot>> <!-- ! Semantic element which just says that this is the foot of the table(Use only when displaying content such as Total,Average and stuff otherwise don't use) -->
 
-                    <tr>
+                    <!-- <tr>
 
                         <td></td>
 
@@ -398,7 +420,7 @@
 
                     </tr>
 
-                </tfoot>
+                </tfoot> -->
 
             </table>
 
