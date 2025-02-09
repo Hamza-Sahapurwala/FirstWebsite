@@ -338,47 +338,68 @@
 
             <table>
 
-                <tr> <!-- * We have to put the header of each column in a row element(tr) -->
+                <thead> <!-- ! Semantic element which just differentiates the header row from other rows -->
 
-                    <th>Word</th> <!-- * th = table head = makes the Content bold and this is the column header  -->
+                    <tr> <!-- * We have to put the header of each column in a row element(tr) -->
+
+                        <th>Word</th> <!-- * th = table head = makes the Content bold and this is the column header  -->
+                        
+                        <th>Comparison</th>
+                        
+                        <th>Superlative</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody> <!-- ! Semantic element which just says this is the body(main content) of the table -->
+
+                    <tr> <!-- * This represents 1 table row -->
+
+                        <td>Big</td> <!-- * td = table data = cells in a table -->
+                        
+                        <td>Bigger</td>
+                        
+                        <td>Biggest</td>
+
+                    </tr>
                     
-                    <th>Comparison</th>
+                    <tr>
+                        
+                        <td>Small</td>
+                        
+                        <td>Smaller</td>
+                        
+                        <td>Smallest</td>
+                        
+                    </tr>
                     
-                    <th>Superlative</th>
-
-
-                </tr>
-
-                <tr> <!-- * This represents 1 table row -->
-
-                    <td>Big</td> <!-- * td = table data = cells in a table -->
+                    <tr>
+                        
+                        <td>Huge</td>
+                        
+                        <td>Huger</td>
+                        
+                        <td>Hugest</td>
+                        
+                    </tr>
                     
-                    <td>Bigger</td>
-                    
-                    <td>Biggest</td>
+                </tbody>
 
-                </tr>
+                <tfoot> <!-- ! Semantic element which just says that this is the foot of the table(Use only when displaying content such as Total,Average and stuff otherwise don't use) -->
 
-                <tr>
+                    <tr>
 
-                    <td>Small</td>
+                        <td></td>
 
-                    <td>Smaller</td>
-                    
-                    <td>Smallest</td>
+                        <td>Total</td>
 
-                </tr>
+                        <td>5000</td>
 
-                <tr>
+                    </tr>
 
-                    <td>Huge</td>
-                    
-                    <td>Huger</td>
-                    
-                    <td>Hugest</td>
+                </tfoot>
 
-                </tr>
-                    
             </table>
 
         </main>
