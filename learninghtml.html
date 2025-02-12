@@ -430,19 +430,47 @@
 
             <form action=""> <!-- * action contains the place where we send the info to (to perform actions) via HTTPS protocol -->
 
+                <!-- ! Labels -->
+
+                <!-- * Labels are very very important -->
+
+                <!-- * Labels links the input tags with text and they are good for screen readers -->
+
+                <!-- * The linking happens using the for attribute on the label and id attribute on the input tag -->
+
+                <!-- ! Id attribute should be given a unique name for that particular tag and must not be used again -->
+
                 <!-- ! Input -->
 
                 <!-- * Taking input from the users -->
 
                 <!-- * It doesn't have a complimentary closing tag -->
 
-                <input type="text" placeholder="username"> <!-- * This takes text input -->
+                <p>
+
+                    <label for="username">Enter your username here:</label>
+
+                    <input type="text" placeholder="username" id="username"> <!-- * This takes text input -->
+
+                </p>
 
                 <!-- * placeholder is used to write info about what to input in the input field -->
 
-                <input type="password" placeholder="password"> <!-- * This takes password based input -->
+                <p>
+
+                    <label for="password">Enter your password here:</label>
+
+                    <input type="password" placeholder="password" id="password"> <!-- * This takes password based input -->
+
+                </p>
+
+                <p>
                 
-                <input type="color"> <!-- * This is the colour picker -->
+                    <label for="color">Enter your favourite colour here:</label>
+                    
+                    <input type="color" id="color"> <!-- * This is the colour picker -->
+
+                </p>
 
                 <!-- * All the other types can be searched on MDN -->
 
