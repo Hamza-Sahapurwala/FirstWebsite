@@ -446,11 +446,19 @@
 
                 <!-- * It doesn't have a complimentary closing tag -->
 
+                <!-- ! Name Attribute -->
+
+                <!-- * As it says, it just gives a name to the input tags so that they are easier to read and catch by the server to process them -->
+
+                <!-- * They tell the serve rwhere the information has come from -->
+
+                <!-- * It is very imp and should be used in every input tag -->
+
                 <p>
 
                     <label for="username">Enter your username here:</label>
 
-                    <input type="text" placeholder="username" id="username"> <!-- * This takes text input -->
+                    <input type="text" placeholder="username" id="username" name="username"> <!-- * This takes text input -->
 
                 </p>
 
@@ -460,7 +468,7 @@
 
                     <label for="password">Enter your password here:</label>
 
-                    <input type="password" placeholder="password" id="password"> <!-- * This takes password based input -->
+                    <input type="password" placeholder="password" id="password" name="password"> <!-- * This takes password based input -->
 
                 </p>
 
@@ -468,7 +476,7 @@
                 
                     <label for="color">Enter your favourite colour here:</label>
                     
-                    <input type="color" id="color"> <!-- * This is the colour picker -->
+                    <input type="color" id="color" name="color"> <!-- * This is the colour picker -->
 
                 </p>
 
