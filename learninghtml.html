@@ -432,6 +432,28 @@
 
                 <!-- * Action label can be used to transport data from the server and form tags are used in places other than the forms -->
 
+                <!-- ! HTML Validation -->
+
+                <!-- * Validation here means client side validation -->
+
+                <!-- * We make them follow the rules i.e. fill in the username and then fill in password properly then you will be registered -->
+
+                <!-- * required attribute is one of those validations where it tells you must fill this input field to proceed -->
+
+                <!-- * minlength and maxlength tells the min and max of text you can fill -->
+
+                <!-- * there are also input types like email which require you input only an email -->
+
+                <p>
+
+                    <label for="email">Enter your email</label>
+
+                    <input type="email" name="emailinput" id="email" placeholder="Enter your email here" required>
+
+                </p>
+
+                <!-- * Just that, the above input only wants @ symbol and it will work -->
+
                 <!-- ! Labels -->
 
                 <!-- * Labels are very very important -->
@@ -460,7 +482,7 @@
 
                     <label for="username">Enter your username here:</label>
 
-                    <input type="text" placeholder="username" id="username" name="username"> <!-- * This takes text input -->
+                    <input type="text" placeholder="username" id="username" name="username" required minlength="10" maxlength="20"> <!-- * This takes text input -->
 
                 </p>
 
