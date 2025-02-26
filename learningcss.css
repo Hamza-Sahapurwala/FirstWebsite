@@ -1,0 +1,10 @@
+/* * This is a css file
+* CSS - Cascading Style Sheets
+* Let's do something to show css works
+*/
+
+h1{
+    color: aqua;
+}
+
+/* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
