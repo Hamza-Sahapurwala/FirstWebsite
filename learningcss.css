@@ -77,6 +77,14 @@
 
 /* * Adds space inbetween the characters of the letters */
 
+/* ! Font Size */
+
+/* * We can set the font size of the text */
+
+/* * The font can be set by either absolute units(pixels, cm, in(inches), etc) or by relative units(em, rem, vh, vw, etc) */
+
+/* * Pixel is used everywhere and 1px for anything is same as the 1px of any other thing but it's not good for responsive sites as pixel size changes in each website */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
@@ -96,8 +104,10 @@ button{
 }
 
 p{
-    line-height: 2;
+    line-height: 1;
 
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
+
+    /* font-size: 0px; */
 }
 
