@@ -29,8 +29,22 @@
 
 /* * It's an additive colour system */
 
+/* ! Hexadecimal System */
+
+/* * By  using the hexadecimal system, colours are assigned some value, which helps us pick us the shade of colour we want */
+
+/* * The syntax is: #000000 (This is black)*/
+
+/* * The first two characters after # is for the red, the next two for green and last two for blue */
+
+/* ? Protip: if the same characters are repeating(#000000), it can be shorten down to #000 and it can be applied to any hexcolour code which has repeating characters for a particular colour channel */
+
+/* * Same as with rgb, use colour picker/pallettes online for choosing any specific colour */
+
+/* * And it's additive colour system too */
+
 h1{
-    color: aqua;
+    color: #0FF; /* * Can be expanded to #00FFFF */
     background-color: rgb(0, 0, 0); /* * This gives us black */
 }
 
