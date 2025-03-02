@@ -57,12 +57,24 @@
 
 /* * normal = 400 */
 
+/* ! Text Decoration */
+
+/* * It helps us puts underline, overline, line-through and stuff */
+
+/* * We can also specify the colour of the line and the style of the line */
+
+/* * Can be used to remove the default underlines in anchor tags */
+
+/* * Syntax: text-decoration: [colour(default is black)] underline [wavy, dotted, etc.]; */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
     background-color: rgb(0, 0, 0); /* * This gives us black */
 
     text-align: center; /* * All the h1 tag texts are put in the centre */
+
+    text-decoration: gray underline solid;
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
