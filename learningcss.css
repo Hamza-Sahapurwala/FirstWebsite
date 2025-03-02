@@ -51,6 +51,12 @@
 
 /* * We can alter how much space is given to each tag to use text-align more efficiently */
 
+/* ! Font Weight */
+
+/* * Basically, we can set the text to bold, bolder or normal using those keywords and no. */
+
+/* * normal = 400 */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
@@ -62,6 +68,8 @@ h1{
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
 
 button{
+    font-weight: bolder; /* * Makes the text inside the button bolder */
+
     color: magenta; /* * The text in the button changes the colours*/
 }
 
