@@ -43,9 +43,20 @@
 
 /* * And it's additive colour system too */
 
+/* ! Text Align */
+
+/* * It tells the text where it should be */
+
+/* * The nuance is that the text will be aligned on the space given to the said element block, not on the webpage itself */
+
+/* * We can alter how much space is given to each tag to use text-align more efficiently */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
+
     background-color: rgb(0, 0, 0); /* * This gives us black */
+
+    text-align: center; /* * All the h1 tag texts are put in the centre */
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
