@@ -67,6 +67,12 @@
 
 /* * Syntax: text-decoration: [colour(default is black)] underline [wavy, dotted, etc.]; */
 
+/* ! Line-Height */
+
+/* * Adds extra space b/w lines of text */
+
+/* * The no. given is multiplies by the font size of the text to give the appropriate line space */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
@@ -83,5 +89,9 @@ button{
     font-weight: bolder; /* * Makes the text inside the button bolder */
 
     color: magenta; /* * The text in the button changes the colours*/
+}
+
+p{
+    line-height: 2;
 }
 
