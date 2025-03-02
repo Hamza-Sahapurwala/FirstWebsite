@@ -85,6 +85,14 @@
 
 /* * Pixel is used everywhere and 1px for anything is same as the 1px of any other thing but it's not good for responsive sites as pixel size changes in each website */
 
+/* ! Font-Family */
+
+/* * We can assign fonts to the text */
+
+/* * It relies on the built-in fonts in the user browser */
+
+/* * We can assign a primary font but because of the browsers may not come in built in with that font, we can assign back-up fonts */
+
 h1{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
@@ -93,6 +101,8 @@ h1{
     text-align: center; /* * All the h1 tag texts are put in the centre */
 
     text-decoration: gray underline solid;
+
+    font-family: 'Times New Roman', Times, serif; /* * If the browser don't have Times New Roman, the Times font is used and the same for serif */
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
