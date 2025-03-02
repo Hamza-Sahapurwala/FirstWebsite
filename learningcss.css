@@ -5,12 +5,17 @@
 
 /* * The tag name like h1,a,br is needed to style them using CSS */
 
-/* ! Colour Attribute */
+/* ! Color Attribute */
 
 /* * Assigns colour to the text available */
 
+/* ! Background-Color Attribute */
+
+/* * Assigns only colour to the background of the given text block */
+
 h1{
     color: aqua;
+    background-color: black;
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
