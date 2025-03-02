@@ -13,9 +13,25 @@
 
 /* * Assigns only colour to the background of the given text block */
 
+/* ! Different ways of using colours in CSS */
+
+/* ! RGB(redvalue, greenvalue, bluevalue) */
+
+/* * There are 140 named colours, which are very limited */
+
+/* * To access other colours we use rgb(redvalue, greenvalue, bluevalue) */
+
+/* * Each value can go b/w 0-255 both inclusive */
+
+/* * This helps to tune which colour we want specifically */
+
+/* * We can the values for the colour we want using colour picker/pallettes online */
+
+/* * It's an additive colour system */
+
 h1{
     color: aqua;
-    background-color: black;
+    background-color: rgb(0, 0, 0); /* * This gives us black */
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
