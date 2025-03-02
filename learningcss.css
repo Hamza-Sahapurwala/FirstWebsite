@@ -3,8 +3,19 @@
 * Let's do something to show css works
 */
 
+/* * The tag name like h1,a,br is needed to style them using CSS */
+
+/* ! Colour Attribute */
+
+/* * Assigns colour to the text available */
+
 h1{
     color: aqua;
 }
 
 /* *  We see that all the h1 tags turn to aqua, that means our css is linked! */
+
+button{
+    color: magenta; /* * The text in the button changes the colours*/
+}
+
