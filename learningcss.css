@@ -121,3 +121,15 @@ p{
     /* font-size: 0px; */
 }
 
+/* ! Universal Selector */
+
+/* * All the elements are selected regardless of their type and will be applied the gived style */
+
+/* * Not a good idea to use it */
+
+/* * Thought the syntax is: */
+
+*{
+    background-color: red;
+}
+
