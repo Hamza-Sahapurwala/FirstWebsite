@@ -136,3 +136,13 @@ p{
 *{
     background-color: red;
 }
+
+/* ! ID Selector */
+
+/* * We can select any specific element using just their id */
+
+/* * Syntax: #idofthetag{styles} */
+
+#username{
+    color: blueviolet; /* * This makes the input texts blue violet of the username input tag  */
+}
