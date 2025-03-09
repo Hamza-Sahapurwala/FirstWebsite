@@ -93,7 +93,11 @@
 
 /* * We can assign a primary font but because of the browsers may not come in built in with that font, we can assign back-up fonts */
 
-h1{
+/* ! Selector List */
+
+/* * We can select multiple elements by just putting a comma */
+
+h1, h2{
     color: #0FF; /* * Can be expanded to #00FFFF */
 
     background-color: rgb(0, 0, 0); /* * This gives us black */
@@ -132,4 +136,3 @@ p{
 *{
     background-color: red;
 }
-
