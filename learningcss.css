@@ -146,3 +146,13 @@ p{
 #username{
     color: blueviolet; /* * This makes the input texts blue violet of the username input tag  */
 }
+
+/* ! Class Selector */
+
+/* * They are used to group style some tags */
+
+/* * we use . instead of # to define class selectors */
+
+.datainput{
+    background-color: white; /* * The tags is class name datainput have their background changed to white */
+}
