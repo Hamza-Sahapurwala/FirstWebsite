@@ -156,3 +156,22 @@ p{
 .datainput{
     background-color: white; /* * The tags is class name datainput have their background changed to white */
 }
+
+/* ! Descendent Selector */
+
+/* * Used for selecting elements inside other elements such as any anchor tags present inside the paragraph tag */
+
+/* * They are used to specify tags to style which are inside other specific tags */
+
+/* * We can do it infinite no. of specifications(depending on the html, of course) */
+
+/* * Syntax: grandfather father .... sonwhichwearegonnastyle{} */
+
+/* * We can also put classes and ids are the father element and style the elements inside them */
+
+li a{ /* * Removes the lines below all the anchor tags present in any li element */
+
+    /* * The li tags are themselves have not been styled, only the present anchor tags have been */
+
+    text-decoration: none;
+}
