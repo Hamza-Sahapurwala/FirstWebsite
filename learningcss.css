@@ -206,3 +206,33 @@ h1 + p{ /* * Only the p tags after an H1 */
 form > p > label{ /* * P and Label tags which are not nested in anything else are only effected */
     background-color: white;
 }
+
+/* ! Attribute selector */
+
+/* * As in it's name, it selects and styles based on if the element contains that particular attribute */
+
+/* * Majorly used for differentiating between the styles of different input tags */
+
+/* * They are case-sensitive */
+
+input[type = "password"]{ /* * Only those input tags whose attributes are set to password are affected */
+    color: aqua;
+}
+
+/* * If we want to select on the basis of classes */
+
+/* * We can do it in 2 ways */
+
+/* * nameoftag[class = "nameofclass"] */
+
+/* * nameoftag.nameofclass */
+
+/* input.inputclass{
+    background-color: green; /* Changes the bg colour of the input tags of those class attribute */
+/*} */
+
+/* * There are other types of things we can put inplace of the = sign */
+
+/* * attribute *= something, finds that specific attribute has that word or not */
+
+/* * attribute $= .something, only styles those tags which have attributes which ends with the .something */
