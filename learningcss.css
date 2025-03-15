@@ -236,3 +236,33 @@ input[type = "password"]{ /* * Only those input tags whose attributes are set to
 /* * attribute *= something, finds that specific attribute has that word or not */
 
 /* * attribute $= .something, only styles those tags which have attributes which ends with the .something */
+
+/* ! Psuedo Classes */
+
+/* * What changes should the tags show when any actions occur to them */
+
+/* * Syntax: tag:action */
+
+button:hover{ /* * Whenever the mouse hovers on them, the buttons change colours */
+    background-color: aqua;
+}
+
+button:active{ /* * When the button is being pressed, it changes to this colour */
+    background-color: blueviolet;
+}
+
+input[type = "radio"]:checked{ /* * When the checkbox or radio is checked, then it will be styled like this */
+    color: green;
+}
+
+/* * There is something known as nth-of-type() psuedo class */
+
+/* * It selects the nth tag from repeating tags, nth-of-type(3) will select the 3rd tag of that type */
+
+/* * If we want to select every 3 tag from the repeating tags, nth-of-type(3n) */
+
+/* * If we want to select even or odd only, nth-of-type(even/odd) */
+
+/*button:nth-of-type(2n){
+    background-color: green;
+} */
