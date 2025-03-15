@@ -187,3 +187,22 @@ li a{ /* * Removes the lines below all the anchor tags present in any li element
 h1 + p{ /* * Only the p tags after an H1 */
     background-color: white;
 }
+
+/* ! Direct Descendent Selector */
+
+/* * Like a Descendent Selector, just that they should not be nested in anything else */
+
+/* * Eg 
+<p>
+<a></a>
+<p><a></a></p>
+</p>
+*/
+
+/* * For the above example, only the anchor tag not inside any other tag is effected */
+
+/* * Syntax: Father > Child */
+
+form > p > label{ /* * P and Label tags which are not nested in anything else are only effected */
+    background-color: white;
+}
