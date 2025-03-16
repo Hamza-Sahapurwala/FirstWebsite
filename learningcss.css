@@ -266,3 +266,21 @@ input[type = "radio"]:checked{ /* * When the checkbox or radio is checked, then 
 /*button:nth-of-type(2n){
     background-color: green;
 } */
+
+/* ! Pseudo Elements */
+
+/* * Used to select particular parts of a tag, like the first letter written in the h1 tag */
+
+/* * Syntax: tag::pseudo-element */
+
+/* * If the tag is not specified, it will be applied to the whole html document */
+
+h2::first-letter{ /* * All the first letters for every h2 tag is effected */
+    font-size: 50px;
+}
+
+/* * Other Pseudo Elements: */
+
+/* ! ::first-line: the first line of the tag is affected. Used majorly on paragraph tags */
+
+/* ! ::selection: When ever you select some text, like for copying and stuff, we can set what happens to the text while that is happening  */
