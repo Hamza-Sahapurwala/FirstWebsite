@@ -59,6 +59,24 @@ p{
 
 /* * And !important automatically becomes the default style for that while ignoring specificity */
 
+/* ! Inheritance */
+
+/* * Like with the universal selector, if we give the body something styles, it will adopted by most(only inputs and buttons don't adopt inherited styles) tags inside the body */
+
+/* * If you want to force input to adopt, use inherit. e.g */
+
+/* 
+body{
+    color: red;
+}
+
+input,button{
+    color: inherit;
+}
+*/
+
+/* ! Above code only works when the input and button are present inside the body tag */
+
 /* ! Selectors */
 
 /* * The tag name like h1,a,br is needed to style them using CSS */
