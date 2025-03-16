@@ -21,6 +21,44 @@ p{
 
 /* * The color: black style will be applied as it the last thing that is encountered by the browser */
 
+/* ! Specificity */
+
+/* ! Rule For CSS */
+
+/* * If there are different selectors styling the same element and there is some conflict in some attribute, the selector which is more 'specific' about the element, wins and it becomes the styler  */
+
+/* * General Rule For Selection:
+    * ID Selector(First)
+    * Class Selector(Second)
+    * Others(Third)
+*/
+
+/* * There are online Specificity Calculators(use that) */
+
+/* * Specifity acts on a score, where the higher score specifity wins */
+
+/* * ID is given 100's place, Class is given 10's place and elements are given Digit's place */
+
+/* * It comes out into a 3-digit no. like this _ _ _ and in this the no. of all the ids,classes and elements of the selector are put in the respective places and then compared */
+
+/* * And the higher score selector will style the thing according to it's settings */
+
+/* * This 3-digit no. doesn't act like normal no. system, we could 50 element selectors but 1 class/id selector can outclass them style the specific element */
+
+/* ! Remember, it only wins on giving the style of the attribute that has come into conflict between 2 or more selectors,
+   ! other styles which don't conflict will still be applied even from both the lower and higher score selectors
+*/
+
+/* ? NOTE: Inline Styles have more speciality than others that have been discussed */
+
+/* * Avoid Inline styles for these reasons */
+
+/* * Also there exists something known as !important */
+
+/* * It is kept after the attribute in question, e.g. color: red !important */
+
+/* * And !important automatically becomes the default style for that while ignoring specificity */
+
 /* ! Selectors */
 
 /* * The tag name like h1,a,br is needed to style them using CSS */
