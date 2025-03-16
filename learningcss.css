@@ -3,6 +3,26 @@
 * Let's do something to show css works
 */
 
+/* ! Cascade (Order) */
+
+/* ! Rule For CSS: */
+
+/* * If they are two conflicting styles, like 2 spans right one after another in CSS files, the lower one will be applyed */
+
+/* * Whichever of the same selector is at the lower order, that will be used for the styling */
+
+/* p{
+    color: red;
+}
+p{
+    color: black;
+}    
+*/
+
+/* * The color: black style will be applied as it the last thing that is encountered by the browser */
+
+/* ! Selectors */
+
 /* * The tag name like h1,a,br is needed to style them using CSS */
 
 /* ! Color Attribute */
