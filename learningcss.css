@@ -93,10 +93,42 @@ input,button{
     
 */
 
+/* ! Border */
+
+/* * We can style the borders of any elements we have */
+
+/* * Border Terms: */
+
+/*  ? border-width: It sets the width of the border
+
+? border-color: Set's the color of the border
+
+? border-style: Set's the style of the border(if it's solid, dotted,etc. In Default, we can't see the border) */
+
+/* * We have the border attribute which can take all of the above but in one line */
+
+/* * The order is border[-top/bottom/left/right]: width | style | color */
+
+/* * border-radius: This is used to set rounded borders for the elements */
+
 h1 { /* * The Background colour is placed within these boundaries */
   height: 50px;
 
   width: 200px;
+
+  border-width: 5px; /* * This will add extra 10x10 px(5px from each side) to the content box as the box width has been increased */
+
+  border-color: azure;
+
+  border-style: solid;
+
+  box-sizing: border-box; /* * This will take up 10x10px(5px from each side) so the actual content gets 40x190 space */
+
+  border-bottom-style: none; /* * We can specify, like in this example, the styles of each side of the border */
+
+  border-top: 5px groove white;
+
+  border-radius: 10px;
 }
 
 /* ! Selectors */
