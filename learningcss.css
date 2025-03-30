@@ -111,6 +111,17 @@ input,button{
 
 /* * border-radius: This is used to set rounded borders for the elements */
 
+/* ! Padding */
+
+/* * It is the measurement of space between the content box and the border */
+
+/* * We can change the padding on each individually(using padding-left, padding-right, etc.) or set each side the same distance using just padding */
+
+/* * padding: (for 1 value) for_all_four_sides, 
+  * padding: (for 2 values) vertical horizontal, 
+  * padding: (for 3 values) top horizontal bottom, 
+  * padding: (for 4 values) top right bottom left */
+
 h1 { /* * The Background colour is placed within these boundaries */
   height: 50px;
 
@@ -129,6 +140,12 @@ h1 { /* * The Background colour is placed within these boundaries */
   border-top: 5px groove white;
 
   border-radius: 10px;
+
+/*   padding-left: 10px;
+
+  padding-top: 100px; */
+
+  padding: 10px 20px 30px 40px;
 }
 
 /* ! Selectors */
