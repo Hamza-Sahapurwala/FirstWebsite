@@ -79,13 +79,13 @@ input,button{
 
 /* ! CSS Units */
 
-/* * Percentage: */
+/* ! Percentage: */
 /* * It's used to percentage of the parent element and apply it the given element, It's a relative scale */
 /* * For example: width = 50% means we are setting it to half the size of the parent element */
 /* * Example 2: line-height = 50%, half the font size of the element is applied */
 /* * Used mainly in setting width and height */
 
-/* * Ems: */
+/* ! Ems: */
 /* * Relative Units */
 /* * If we set the font size of a child element as 1em, it will take the same size as the parent element */
 /* * 2ems will be double the size of the parent element */
@@ -97,6 +97,20 @@ input,button{
 * margin-left:1em; This also increases with increase of font-size under p
 *}*/
 /* * ems are basically used for appropriate scaling up of elements w.r.t. to the parent tags */
+/* * It makes sense to use ems only in nested elements situation */
+
+/* ? Problems with Ems: */
+
+/* * With more nested elements, the size of the elements can exponentially increase for the most nested element and vice versa */
+/* * Like if we have lists inside list, the most nested list item will have the size either blown up or shrunk down to a tiny level */
+/* * To overcome that, we use rem */
+
+/* ! Rems */
+/* * Known as Root ems */
+/* * It takes the root html's sizes (IMP) */
+/* * e.g. if root html's font size if 20 px, 1rem is 20px, 2rem is 40px and so on AND this applies to the whole file */
+/* * Therefore, severely nested elements are not blown up or shrunk down too much */
+/* * Therefore, use rems for nested elements */
 
 /* ! Box Model */
 
