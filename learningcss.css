@@ -132,6 +132,16 @@ input,button{
   * margin: (for 3 values) top horizontal bottom, 
   * margin: (for 4 values) top right bottom left */
 
+/* ! Display */
+
+/* * Used to change if an element is inline or block */
+
+/* * For Inline elements: Width, height, margin and padding are ignored when putting them next ot other inline elements */
+
+/* * display: inline-block (This removes the limitations of inline elements and help us change the width, height, margin and padding) */
+
+/* * If display:none, the element is not displayed and it doesn't afect other elements */
+
 h1 { /* * The Background colour is placed within these boundaries */
   height: 50px;
 
@@ -158,6 +168,8 @@ h1 { /* * The Background colour is placed within these boundaries */
   padding: 10px 20px 30px 40px;
 
   margin: 0px 0px 0px 0px;
+
+  display: inline; /* * All the elements will now become inline elements */
 }
 
 /* ! Selectors */
