@@ -122,6 +122,16 @@ input,button{
   * padding: (for 3 values) top horizontal bottom, 
   * padding: (for 4 values) top right bottom left */
 
+/* ! Margin */
+
+/* * It is the distance between the borders of two elements */
+
+/* * Similar to padding, we can change the values of the margin like so:
+  * margin: (for 1 value) for_all_four_sides, 
+  * margin: (for 2 values) vertical horizontal, 
+  * margin: (for 3 values) top horizontal bottom, 
+  * margin: (for 4 values) top right bottom left */
+
 h1 { /* * The Background colour is placed within these boundaries */
   height: 50px;
 
@@ -146,6 +156,8 @@ h1 { /* * The Background colour is placed within these boundaries */
   padding-top: 100px; */
 
   padding: 10px 20px 30px 40px;
+
+  margin: 0px 0px 0px 0px;
 }
 
 /* ! Selectors */
