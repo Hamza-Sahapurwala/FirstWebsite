@@ -77,6 +77,14 @@ input,button{
 
 /* ! Above code only works when the input and button are present inside the body tag */
 
+/* ! CSS Units */
+
+/* * Percentage: */
+/* * It's used to percentage of the parent element and apply it the given element, It's a relative scale */
+/* * For example: width = 50% means we are setting it to half the size of the parent element */
+/* * Example 2: line-height = 50%, half the font size of the element is applied */
+/* * Used mainly in setting width and height */
+
 /* ! Box Model */
 
 /* * In CSS, every element is considered to a box, like a box which surrounds the content */
