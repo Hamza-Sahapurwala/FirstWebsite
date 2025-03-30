@@ -85,6 +85,19 @@ input,button{
 /* * Example 2: line-height = 50%, half the font size of the element is applied */
 /* * Used mainly in setting width and height */
 
+/* * Ems: */
+/* * Relative Units */
+/* * If we set the font size of a child element as 1em, it will take the same size as the parent element */
+/* * 2ems will be double the size of the parent element */
+/* * eg: div{
+*  font-size:20px;
+*}
+*p{ This p is nested inside the div
+* font-size:2em; the text stored under p elements have 40px as their font size
+* margin-left:1em; This also increases with increase of font-size under p
+*}*/
+/* * ems are basically used for appropriate scaling up of elements w.r.t. to the parent tags */
+
 /* ! Box Model */
 
 /* * In CSS, every element is considered to a box, like a box which surrounds the content */
