@@ -490,8 +490,8 @@ input[type="radio"]:checked {
 /* * If the tag is not specified, it will be applied to the whole html document */
 
 h2::first-letter {
-  /* * All the first letters for every h2 tag is effected */
-  font-size: 50px;
+/* * All the first letters for every h2 tag is effected */
+font-size: 50px;
 }
 
 /* * Other Pseudo Elements: */
@@ -499,3 +499,15 @@ h2::first-letter {
 /* ! ::first-line: the first line of the tag is affected. Used majorly on paragraph tags */
 
 /* ! ::selection: When ever you select some text, like for copying and stuff, we can set what happens to the text while that is happening  */
+
+/* ! See-Through Colours (Alpha and Opacity) */
+
+/* Remember rgb() thing for colours, yea just add an a, so rgba() */
+
+/* the a part ranges from 0 to 1 and it specifies if we can 'see through' the colour */
+
+/* 0 means the colour will be visible while, 1 means the background colour will be visible, not the colour we have specified */
+
+/* Opacity by itself is a css element which has range of 0 to 1.(Same reasoning for 0 and 1 above) */
+
+/* Opacity effects all the child tags and the text present inside the tag we are adding styles too(So it creates shades which we can use to beautify our websites with) */
