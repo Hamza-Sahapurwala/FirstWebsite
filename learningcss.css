@@ -562,3 +562,30 @@ font-size: 50px;
 /* * You set a top and after you scroll down the element, the element travels with you */
 
 /* * Kinda like in those websites which ask for email login for getting their stuff */
+
+/* ! CSS Transistions */
+
+/* * If we want to make any transitions, like from 1 shape to another or 1 colour to another, css transitions are used */
+
+.circle{
+  width: 300px;
+  height: 300px;
+  background-color: magenta;
+  transition: background-color 3s 1s, border-radius 3s 1s; /* * We can set for 2 different things */
+}
+
+.circle:hover{
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+/* * Now if we want to transition from square to circle in a proper manner, we use the transition property */
+
+/* * We can set the time needed to transition and specify which property which will be affected */
+
+/* * Syntax : Transition: property-name duration delay */
+
+/* * Delay tells how much time to wait until the transition starts */
+
+/* * transition-timing-function: ease-in/ease-out and other stuff you can find on easings.net */
+
