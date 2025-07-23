@@ -589,3 +589,53 @@ font-size: 50px;
 
 /* * transition-timing-function: ease-in/ease-out and other stuff you can find on easings.net */
 
+/* ! CSS Transforms */
+
+/* * Like on photoshop, we can transform an image into something, similarly we can do that for elements on a website using css */
+
+/* * All the transforms you apply will affect the content present in the element and the child elements */
+
+/* ! transform: rotate(); */
+
+/* * It takes in the values of either degrees(deg), radians(rad), turns(turn) or gradians(grad) and rotates the element by that much */
+
+/* * e.g. transform: rotate(45deg); This rotates the element by 45 degrees from its mean position */
+
+/* * There is rotatex, rotatey, rotatez and rotate3d */
+
+/* ! transform-origin: ; */
+
+/* * To specify from where do apply the transform (like in the case above, it is ,by default, center but we can change to rotate at the point of top, top-right, top-left, bottom-right, bottom-left, bottom */
+
+/* * e.g. transform-orgin: top-right; This will apply the transform while keeping the point of transform as the top right of the element */
+
+/* ! transform: scale() */
+
+/* * We can scale the element to a bigger or smaller size */
+
+/* * e.g. transform: scale(2,1); Scales it twice on the x axis while keeping it same on the y axis */
+
+/* * There is scalex, scaley, scalez and scale3d */
+
+/* ! transform: translate() */
+
+/* * We can move elements around using translate */
+
+/* * e.g. transform: translate(-2px,2px); Moves the element 2px to the left and 2px to the top */
+
+/* * e.g. transform: translatex(2px); This moves the element by 2px to the right */
+
+/* * There is also translatey and translatez */
+
+/* ! transform: skew() */
+
+/* * Skews(???) the element by input degrees */
+
+/* * e.g. transform: skew(30deg, 20deg); skews the element by 30 degrees on the x axis and 20 degrees on the y axis */
+
+/* ! Using different transforms together */
+
+/* * Just put some space between them */
+
+/* * transform: rotate(30deg) scale(2px,2px) translate(2px, 2px); */
+
