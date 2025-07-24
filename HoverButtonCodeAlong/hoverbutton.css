@@ -1,0 +1,25 @@
+body{
+    font-family: 'Roboto',sans-serif; /* * All the elements in the body tag will use these fonts */
+    display: flex; /* * Haven't taught what this is at the time of teaching */
+    align-items: center; /* * To put everything in the centre(related to line 3) */
+    justify-content: center; /* * Related to line 3 */
+    height: 100vh; /* * Related to line 3 */
+    background-color: #151b29; /* * Basically black colour */
+}
+
+button{
+    background: none; /* * To lose the default colour of the button */
+    color: #ffa260; /* * Colour for the text */
+    border: 2px solid; /* * Sets the size of the border width and type */
+    padding: 1em 2em; /* * 1em for x axis separation between border and text and 2 em for y axis seperation between border and text */
+    font-size: 1em;  /* * Font size */
+    transition: all 0.25s; /* * Applies smooth transition to all the properties present in the hover part and delays them by 0.25s */
+}
+
+button:hover{ /* * When the cursor hover's over the button, apply these properties */
+    border-color:  #f1ff5c; /* * Changes border colour to yellow */
+    color: white; /* * Changes text colour to white */
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; /* * Gives a show to the button (x-offset y-offset blur spread color ) */
+    transform: translateY(-0.25em); /* * Moves the button up */
+    cursor: pointer; /* * Changes the pointer from triangle to click */
+}
