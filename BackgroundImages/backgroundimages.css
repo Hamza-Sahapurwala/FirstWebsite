@@ -1,0 +1,34 @@
+section{
+    width: 80%;
+
+    height: 800px;
+
+    margin: 0 auto;
+
+    background-image: url("../cat.png");
+
+    background-size: cover;
+
+    /* * contain = scales image as large as possible without cropping or stretching it (will repeat the image if the space is not filled) */
+
+    /* * (This is used the most)cover = scales image as large as possible without stretching(so will crop it) */
+
+    background-repeat: no-repeat; /* * So that the image is not repeated */
+
+    background-position: none; /* * Tells which part of the image will be used in particular */
+
+    /* ! Background Property */
+
+    /* * Where you can define all the background properties in 1 statement */
+
+    /* * e.g. background: no-repeat center/cover url(...); the center/cover part centers the image and makes it cover the area(it's css syntax) */
+
+    /* * always put a / after doing center, top or bottom to the background image position; to add the cover or contain stuff  */
+
+    /* * background: no-repeat center/cover url(1), no-repeat center/cover rgb(...) Here we can put 2 background images together */
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+}
