@@ -1,0 +1,8 @@
+body{
+    font-family: "Bitcount Prop Single", system-ui; /* * This links the Fonts */
+}
+
+body:hover{
+    background-color: black;
+    color: white;
+}
