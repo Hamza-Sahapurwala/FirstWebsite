@@ -1,0 +1,25 @@
+img{
+    width: 30%; /* * % resizes(or scales) the elements' sizes, if the display screen size changes */
+    /* * 30% because it puts 3 images in one line */
+    /* margin: 20px; We don't want to hardcode this value cause it will look aesthetically bad when going to different screen size */
+    margin: 1.666%; /* * or we can use calc(10%/6)-> This statement calculates everything */
+    /* * Calculations: 
+    We have 3 images in a row and they take 30% of the width of screen each = 30x3 = 90%
+    We have 10% left over of the screen
+    Now taking in account the left and right margin of each photo, 6 places((left+right)x3)
+    10/6 = 1.666
+    So we need to give each image 1.6% margin so the photos take up the whole screen in a 3 in a line manner
+    This gives us a aesthetically pleasing look */
+    /* ! The only thing about this method is that if the width changes, we need to change the margin too, So very calculative method */
+
+}
+
+nav{
+    text-transform: uppercase; /* * Uppercases all of the text */
+    border-bottom: 2px solid #f1f1f1; /* * Border is 2 pixels thick and solid and has that color */
+    width: 30%; /* * So that border doesn't go all the way across the screen */
+    margin-left: calc(10%/6); /* * So that we can push the text inline with the images and so it doesn't touch the left side of the screen */ 
+    padding: 1em 0; /* * 20px padding on top and bottom and 0 padding on left and right */
+    font-size: 3.5em; /* * So that it matches the screen size, we used em */
+    font-weight: bold; /* * To make the text bold */
+}
