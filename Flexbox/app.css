@@ -1,0 +1,36 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* * Open Sans is the default font while sans-serif is a fallback option */
+}
+h1 {
+    text-align: center; /* * So that the text is at the centre */
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto; /* * So that this section is in the middle of the screen */
+    border: 5px solid #003049;
+    display: flex; /* * This tells all the divs to be in line and not one after another(as by default, dives are one after another ) */
+    /* ! The above statement lets us use Flexbox, so write the above statement when you want to use flexbox */
+
+    /* ! Flexbox Model */
+    /* * It consists of 2 axis: Main Axis(goes from left to right) and Cross Axis(goes from Top to Bottom) */
+    /* * Whenever css is in flexbox mode, by default we are using the main axis, so all the elements become inline elements */
+    /* * We can reverse the direction of main axis and also make the elements follow the cross axis if we want to using: */
+
+    /* ! flex-direction */
+
+    /* * It lets change the direction and axis of the elements */
+    /* * Elements are chosen by the order they are written in the html file */
+
+    flex-direction: row; /* * Default: All elements are positioned from left to right */
+    flex-direction: row-reverse; /* * All elements are positioned from right to left */
+    flex-direction: column; /* * All the elements follow the cross axis */
+    flex-direction: column-reverse; /* * All elements go from bottom to top */
+}
+
+#container div{ /* * This puts the coloured divs on the screen */
+    width: 200px;
+    height: 200px;
+}
+
