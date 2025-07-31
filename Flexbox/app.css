@@ -23,9 +23,9 @@ h1 {
     /* * It lets change the direction and axis of the elements */
     /* * Elements are chosen by the order they are written in the html file */
 
-    flex-direction: row; /* * Default: All elements start from left and go to right */
+    /*flex-direction: row; /* * Default: All elements start from left and go to right */
     /*flex-direction: row-reverse; /* * All elements start from right and go to left */
-    /*flex-direction: column; /* * All the elements follow the cross axis */
+    flex-direction: column; /* * All the elements follow the cross axis */
     /*flex-direction: column-reverse; /* * All elements go from bottom to top */
 
     /* ! justify-content */
@@ -35,11 +35,21 @@ h1 {
 
     justify-content: flex-start; /* * Elements are kept at the place specified by the flex-direction */
     justify-content: center; /* * Elements are kept at the centre of the flexbox */
-    justify-content: flex-end; /* * Elements are pushed to the end of the box(that is, the final element touches the container at the other end) */
+    justify-content: flex-end; /* * Elements are pushed to the end of the box(that is, the (depending on flex direction)final element touches the container at the other end) */
     justify-content: space-between; /* * There will be spaces assigned between each element(these spaces come from any extra space left from flex-direction) but not on the extreme ends of the first and final element */
     justify-content: space-around; /* * Similar to space-between, just that there is space for the extreme ends of the first and final element so that they don't touch the end of the container */
     justify-content: space-evenly; /* * Similar to space-between, just that spaces are the same for all the elements and between the first and final element and container */
 
+    /* ! flex-wrap */
+
+    /* * We can tell the elements to go the next line(or column) if we don't want the elements to be squashed together in any axis in the container */
+
+    /* * It has 3 modes: wrap, wrap-reversed and nowrap */
+
+    /* ? I had to change the flex direction to column to show as an accurate example */
+
+    flex-wrap: wrap; /* * As each div takes 200px each and they are squashed in 500px, we tell each div to take their space and if the next div doesn't have any left, we tell it to go the next (in this case)column */
+    flex-wrap: wrap-reverse; /* * Just reverses the starting positions of the elements when they were in wrap */
 }
 
 #container div{ /* * This puts the coloured divs on the screen */
