@@ -23,9 +23,9 @@ h1 {
     /* * It lets change the direction and axis of the elements */
     /* * Elements are chosen by the order they are written in the html file */
 
-    /*flex-direction: row; /* * Default: All elements start from left and go to right */
+    flex-direction: row; /* * Default: All elements start from left and go to right */
     /*flex-direction: row-reverse; /* * All elements start from right and go to left */
-    flex-direction: column; /* * All the elements follow the cross axis */
+    /*flex-direction: column; /* * All the elements follow the cross axis */
     /*flex-direction: column-reverse; /* * All elements go from bottom to top */
 
     /* ! justify-content */
@@ -48,8 +48,27 @@ h1 {
 
     /* ? I had to change the flex direction to column to show as an accurate example */
 
-    flex-wrap: wrap; /* * As each div takes 200px each and they are squashed in 500px, we tell each div to take their space and if the next div doesn't have any left, we tell it to go the next (in this case)column */
-    flex-wrap: wrap-reverse; /* * Just reverses the starting positions of the elements when they were in wrap */
+    /*flex-wrap: wrap; /* * As each div takes 200px each and they are squashed in 500px, we tell each div to take their space and if the next div doesn't have any left, we tell it to go the next (in this case)column */
+    /*flex-wrap: wrap-reverse; /* * Just reverses the starting positions of the elements when they were in wrap */
+
+    /* ! align-items */
+
+    /* * Helps us keep the elements either at the top of the container or at the bottom of the container while keeping the same values of flex-direction and justify-content */
+    /* * Basically, it just tells where the element will be at the cross axis */
+    /* * Also the cross axis will change depending on the main axis: if the main axis is horizontal, cross axis is vertical and vice versa */
+    /* ? Here the main axis is horizontal(flex-direction: row), so cross axis is vertical */
+
+    align-items: flex-start;
+    /* * if flex-direction is row; this tells us that the elements will be at the top of the container */
+    /* * if flex-direction is column; this tells us that the elements will be at the left of the container */
+
+    align-items: flex-end;
+    /* * if flex-direction is row; this tells us that the elements will be at the end of the container */
+    /* * if flex-direction is column; this tells us that the elements will be at the right of the container */
+
+    align-items: center; /* * Elements are at the center of the cross axis */
+
+    /*align-items: baseline; /* * This aligns the elements so that the text inside them are considered on the same line(even if the font sizes are different) */
 }
 
 #container div{ /* * This puts the coloured divs on the screen */
