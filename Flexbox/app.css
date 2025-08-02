@@ -23,9 +23,9 @@ h1 {
     /* * It lets change the direction and axis of the elements */
     /* * Elements are chosen by the order they are written in the html file */
 
-    flex-direction: row; /* * Default: All elements start from left and go to right */
+    /*flex-direction: row; /* * Default: All elements start from left and go to right */
     /*flex-direction: row-reverse; /* * All elements start from right and go to left */
-    /*flex-direction: column; /* * All the elements follow the cross axis */
+    flex-direction: column; /* * All the elements follow the cross axis */
     /*flex-direction: column-reverse; /* * All elements go from bottom to top */
 
     /* ! justify-content */
@@ -33,12 +33,12 @@ h1 {
     /* * We can specify how the content is on the page */
     /* * It depends a lot on the flex-direction */
 
-    justify-content: flex-start; /* * Elements are kept at the place specified by the flex-direction */
+    /*justify-content: flex-start; /* * Elements are kept at the place specified by the flex-direction */
     justify-content: center; /* * Elements are kept at the centre of the flexbox */
-    justify-content: flex-end; /* * Elements are pushed to the end of the box(that is, the (depending on flex direction)final element touches the container at the other end) */
-    justify-content: space-between; /* * There will be spaces assigned between each element(these spaces come from any extra space left from flex-direction) but not on the extreme ends of the first and final element */
-    justify-content: space-around; /* * Similar to space-between, just that there is space for the extreme ends of the first and final element so that they don't touch the end of the container */
-    justify-content: space-evenly; /* * Similar to space-between, just that spaces are the same for all the elements and between the first and final element and container */
+    /*justify-content: flex-end; /* * Elements are pushed to the end of the box(that is, the (depending on flex direction)final element touches the container at the other end) */
+    /*justify-content: space-between; /* * There will be spaces assigned between each element(these spaces come from any extra space left from flex-direction) but not on the extreme ends of the first and final element */
+    /*justify-content: space-around; /* * Similar to space-between, just that there is space for the extreme ends of the first and final element so that they don't touch the end of the container */
+    /*justify-content: space-evenly; /* * Similar to space-between, just that spaces are the same for all the elements and between the first and final element and container */
 
     /* ! flex-wrap */
 
@@ -48,7 +48,7 @@ h1 {
 
     /* ? I had to change the flex direction to column to show as an accurate example */
 
-    /*flex-wrap: wrap; /* * As each div takes 200px each and they are squashed in 500px, we tell each div to take their space and if the next div doesn't have any left, we tell it to go the next (in this case)column */
+    flex-wrap: wrap; /* * As each div takes 200px each and they are squashed in 500px, we tell each div to take their space and if the next div doesn't have any left, we tell it to go the next (in this case)column */
     /*flex-wrap: wrap-reverse; /* * Just reverses the starting positions of the elements when they were in wrap */
 
     /* ! align-items */
@@ -66,9 +66,25 @@ h1 {
     /* * if flex-direction is row; this tells us that the elements will be at the end of the container */
     /* * if flex-direction is column; this tells us that the elements will be at the right of the container */
 
-    align-items: center; /* * Elements are at the center of the cross axis */
+    /*align-items: center; /* * Elements are at the center of the cross axis */
 
     /*align-items: baseline; /* * This aligns the elements so that the text inside them are considered on the same line(even if the font sizes are different) */
+
+    /* ! align-content */
+
+    /* * If there are multiple rows or columns created by flex-wrap or other things, we can tell each to have some space between each row and column */
+
+    /* * If the element goes to 2 rows, we can use align-content to put space or do other stuff in between the rows and the same applies for columns */
+
+    /* ? I had to switch on flex-wrap, keep flex-direction at column, align-items at flex-end and justify-content as center for a better example */
+
+    /* ! align-content only works if flex-wrap is on */
+
+    align-content: center; /* * It removes all column/row space between the elements so that they come to they come to the center of the container */
+
+    align-content: flex-start; /* * Removes all column/row space and moves the content to the left of the screen */
+
+    align-content: space-between; /* * Puts enough space between each column/row so that the last column/row will touch the other end of the container while the first column/row touches the container at their end */
 }
 
 #container div{ /* * This puts the coloured divs on the screen */
