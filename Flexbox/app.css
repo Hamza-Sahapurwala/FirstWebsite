@@ -23,9 +23,9 @@ h1 {
     /* * It lets change the direction and axis of the elements */
     /* * Elements are chosen by the order they are written in the html file */
 
-    /*flex-direction: row; /* * Default: All elements start from left and go to right */
+    flex-direction: row; /* * Default: All elements start from left and go to right */
     /*flex-direction: row-reverse; /* * All elements start from right and go to left */
-    flex-direction: column; /* * All the elements follow the cross axis */
+    /*flex-direction: column; /* * All the elements follow the cross axis */
     /*flex-direction: column-reverse; /* * All elements go from bottom to top */
 
     /* ! justify-content */
@@ -62,7 +62,7 @@ h1 {
     /* * if flex-direction is row; this tells us that the elements will be at the top of the container */
     /* * if flex-direction is column; this tells us that the elements will be at the left of the container */
 
-    align-items: flex-end;
+    /*align-items: flex-end;
     /* * if flex-direction is row; this tells us that the elements will be at the end of the container */
     /* * if flex-direction is column; this tells us that the elements will be at the right of the container */
 
@@ -80,11 +80,23 @@ h1 {
 
     /* ! align-content only works if flex-wrap is on */
 
-    align-content: center; /* * It removes all column/row space between the elements so that they come to they come to the center of the container */
+    /*align-content: center; /* * It removes all column/row space between the elements so that they come to they come to the center of the container */
 
-    align-content: flex-start; /* * Removes all column/row space and moves the content to the left of the screen */
+    /*align-content: flex-start; /* * Removes all column/row space and moves the content to the left of the screen */
 
-    align-content: space-between; /* * Puts enough space between each column/row so that the last column/row will touch the other end of the container while the first column/row touches the container at their end */
+    /*align-content: space-between; /* * Puts enough space between each column/row so that the last column/row will touch the other end of the container while the first column/row touches the container at their end */
+}
+
+/* ! align-self */
+
+/* * Similar to align-items, just that it can only be applied to one element at a time */
+
+/* * It concerns itself with the cross-axis */
+
+/* ? I had to keep flex-direction as row, switch off align-content and keep align-items at flex-start for an accurate example */
+
+div:nth-of-type(3){
+    align-self: center; /* * Pushes the third element to center of the container while the other elements follow the align-items rule */
 }
 
 #container div{ /* * This puts the coloured divs on the screen */
