@@ -7,7 +7,7 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto; /* * So that this section is in the middle of the screen */
     border: 5px solid #003049;
     display: flex; /* * This tells all the divs to be in line and not one after another(as by default, dives are one after another ) */
@@ -99,8 +99,35 @@ div:nth-of-type(3){
     align-self: center; /* * Pushes the third element to center of the container while the other elements follow the align-items rule */
 }
 
+/* ! flex-basis */
+
+/* * Defines initial size of element before additional space is distributed(like before using space-evenly) */
+
+/* ! flex-grow */
+
+/* * Controls amount of available space an element should take up.(Takes in unit-less value) */
+
+/* ! flex-shrink */
+
+/* * if items are larger than container size, they shrink according to the value set by this property */
+
+/* ! if min/max-width/height is set, it will follow that */
+
+/* ? Had to switch of height of the container */
+
 #container div{ /* * This puts the coloured divs on the screen */
     width: 200px;
     height: 200px;
+    flex-basis: 200px; 
+    /* * if flex-direction:row, then width is set to this value(this overrides that value) */
+    /* * if flex-direction:column, then height is set to this value(this overrides that value) */
+    /* ? flex-basis is just used instead the height and width stuff to set the size of the elements (and it resizes the container if it doesn't fit and the container doesn't have any hardcoded values) */
+    flex-grow: 1;
+    /* * It actually sets the ratio of free space that can be taken by each element .i.e. 1:1:1:1:1 (Ratio of free space taken by the 5 elements) */
+    /* * Can be used for individual elements too(Like we can set ratio of free space taken by an individual element) */
+    /* * And it will change it's size according to the screen size (cause it's flex box) */
+    flex-shrink: 1;
+    /* * Same description and working like flex-grow */
+    /* ? Just that, it sets the ratio of shrinking */
+    /* * Works when the elements are too big for the container */
 }
-
