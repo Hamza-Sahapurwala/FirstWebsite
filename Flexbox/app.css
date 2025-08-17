@@ -131,3 +131,30 @@ div:nth-of-type(3){
     /* ? Just that, it sets the ratio of shrinking */
     /* * Works when the elements are too big for the container */
 }
+
+/* ! flex */
+
+/* * The above 3 can be used in a combined way using just flex */
+
+/* * flex: flex-grow-value flex-shrink-value flex-basis-value; */
+
+/* * You can use 2 or 1 input values at a time, just put a unit(%,rems,ems,etc) for flex-basis values, only then it can recognize it as flex-basis values */
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: blueviolet;
+    border: 2px solid white;
+    flex: 1 2 300px; /* * I have set flex-grow:1 flex-shrink:2 flex-basis: 300px */
+}
+
+main .maincontent{
+    background-color: cyan;
+    flex: 1 600px; /* * flex-grow:1 flex-basis:600px */
+}
