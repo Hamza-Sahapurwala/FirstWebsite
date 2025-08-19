@@ -99,6 +99,8 @@ div:nth-of-type(3){
     align-self: center; /* * Pushes the third element to center of the container while the other elements follow the align-items rule */
 }
 
+/* ! flex-basis, flex-grow & flex-shrink */
+
 /* ! flex-basis */
 
 /* * Defines initial size of element before additional space is distributed(like before using space-evenly) */
@@ -113,7 +115,7 @@ div:nth-of-type(3){
 
 /* ! if min/max-width/height is set, it will follow that */
 
-/* ? Had to switch of height of the container */
+/* ? Had to switch ofF height of the container for this example */
 
 #container div{ /* * This puts the coloured divs on the screen */
     width: 200px;
