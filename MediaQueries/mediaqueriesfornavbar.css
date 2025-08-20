@@ -1,0 +1,52 @@
+/* ! Building Responsive Navbar */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    display: flex /* * To use flexbox on this and it's children elements */;
+    justify-content: space-between;
+    /* * As the 3 middle links are in a ul tag, they are taken as one element and kept in between while the other two elements are pushed to the side */
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0; 
+}
+
+ul{
+    border: 1px solid red; /* * To know where the ul tag is */
+    flex-grow: 1; /* * As covered, elements will grow to the given space */
+    max-width: 50%; /* * The elements stay centered */
+    display: flex; /* * So that we can distribute the links inside this ul tag (Also an example of a nested flexbox)*/
+    justify-content: space-evenly; /* * Looks good with this */
+}
+
+@media (max-width: 768px){
+    h1{
+        color: blue; /* * Just to know when viewport size is in range of 0px to 768px */
+        font-size: 4em; /* * So that the text doesn't take all the space */
+    }
+    nav{
+        flex-direction: column; /* * Stacks up all the links in a column when viewport is below 768px */
+        align-items: center; /* * Cause align-items works on the axis which is not taken by the flex-direction(here it's row) */
+    }
+    nav ul{
+        flex-direction: column; /* * Same thing as above */
+        align-items: center; /* * Same thing as above */
+    }
+}
+
+@media (max-width: 576px){ /* * When the viewport is in the range of 0px to 576px, these styles will be applied */
+    h1{
+        color: orange;
+        font-size: 3em;
+    }
+}
