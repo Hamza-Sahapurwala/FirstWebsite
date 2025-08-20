@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0; 
+}
+
+/* ! Media Queries */
+
+/* * It's used for responsive design. */
+
+/* * Responsive design means that it will respond to the screen size from where the website is being viewed */
+
+/* * Like example, if the website is being viewed from a phone, it will have different placement of the elements than seeing on a large screen on a laptop */
+
+/* ! We can set media queries using @media */
+
+@media (width:800px) { 
+    /* * When the viewport width is exactly 800px, then all the actions mentioned inside here will occur */
+    /* * It's better to use min-width and max-width to set a range where we can work on the elements properly */
+    h1{
+        color: aqua; /* * color of the text will change if viewport width is exact 800px */
+    }
+}
+
+@media (min-width: 800px) { 
+    /* * Until the viewport width is above 800px, the following styles will be applied */
+    /* * If viewport width drops below 800, it reverts back to applied styles */
+    h1{
+        color: cyan;
+    }
+}
+
+@media (max-width: 800px) { 
+    /* * Unless the viewport width is below 800px, then will the following styles will be applied */
+    /* * If viewport width is greater than 800, it reverts back to applied styles */
+    h1{
+        color: cyan;
+    }
+}
+
+/* ! We can combine 2 or more media queries using 'and' keyword */
+
+@media (min-width: 600px) and (max-width: 800px){
+    /* * This is the range setter, when the viewport width is in between 600px and 800px(both inclusive), the following styles will be applied */
+    h1{
+        color: cyan;
+    }
+}
+
+/* ? If you are setting the multiple max-widths with different response styles as media queries, Make sure it's in descending order, only then it will work */
+
+/* * e.g. max-width=1000
+          max-width=500 */
+
+/* ? Similarly, if you are setting multiple min-widths with different response styles as media queries, Make sure it's in ascending order */
+
+/* * e.g. min-width=500
+          min-width=1000 */
+
+/* ! Orientation */
+
+@media (orientation: portrait){
+    /* * When the viewport is in portrait orientation, the following response styles will be applied */
+    body{
+        background-color: black;
+    }
+}
