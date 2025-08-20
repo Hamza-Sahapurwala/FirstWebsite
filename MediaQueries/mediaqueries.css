@@ -71,9 +71,11 @@ ul,li {
 
 /* ! Orientation */
 
-@media (orientation: portrait){
-    /* * When the viewport is in portrait orientation, the following response styles will be applied */
+@media (orientation: landscape){
+    /* * When the viewport is in landscape orientation, the following response styles will be applied */
     body{
         background-color: black;
     }
 }
+
+/* ? You will get more info on this on MDN */
