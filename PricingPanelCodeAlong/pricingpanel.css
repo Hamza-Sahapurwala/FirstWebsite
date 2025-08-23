@@ -50,3 +50,25 @@ table {
 /* ! All the Above Code is for having a blank slate to work without any browser settings disrupting our project */
 
 /* ! It has been taken from a public domain as mentioned */
+
+html{
+    box-sizing: border-box; /* * The border will be taking the space assigned to the element, so that it doesn't take any extra space */
+    font-family: 'Open-sans', sans-serif; /* * The fonts to use */
+}
+
+body{
+    background-color: #60a9ff;
+    display: flex; /* * So that we can change affect the class panel */
+    justify-content: center; /* * Panel is at the Center of the main axis */
+	align-items: center; /* * Panel is at the Center of the cross axis */
+	min-height: 100vh;
+
+}
+
+.panel{
+    background-color: white;
+	border-radius: 10px; /* * Gives us curved borders */
+	padding: 15px 25px; /* * Spacing between the content and border */
+	width: 100%; 
+	max-width: 960px; /* * It takes this width until the viewport goes below 960px, after which it will start referring the above statement of width:100%; */
+}
