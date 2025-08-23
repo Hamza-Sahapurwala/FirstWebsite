@@ -101,7 +101,7 @@ body{
 	color: #016ff9;
 }
 
-.pricing-features-item{
+.pricing-features-item{ /* * The test below the header */
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 12px;
@@ -110,13 +110,37 @@ body{
 	border-top: 1px solid #e1f1ff;
 }
 
-.pricing-features-item:last-child{
+.pricing-features-item:last-child{ /* * All last elements of this class will get this style */
 	border-bottom: 1px solid #e1f1ff;
 }
 
-.pricing-price{
+.pricing-price{ /* * The styles will be put on the price */
 	color: #016ff9;
 	display: block;
 	font-size: 32px;
 	font-weight: 700;
+}
+
+.pricing-button{ /* * We are shaping the anchor tag as a button */
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	color: #348efe;
+	display: inline-block;
+	padding: 15px 35px;
+	text-decoration: none;
+	margin: 25px 0;
+	transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus{ /* * When the mouse hovers on it or a keyboard controlled selector is on it, these styles will be applied */
+	background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured{ /* * The Free Signup button will get a different style */
+	background-color: #48aaff;
+	color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+	background-color: #269aff;
 }
