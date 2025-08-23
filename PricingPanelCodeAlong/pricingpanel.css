@@ -71,4 +71,21 @@ body{
 	padding: 15px 25px; /* * Spacing between the content and border */
 	width: 100%; 
 	max-width: 960px; /* * It takes this width until the viewport goes below 960px, after which it will start referring the above statement of width:100%; */
+	display: flex; /* * So that we start placing the things inside the panel div */
+	flex-direction: column; /* * Because we want to first size this for phone screen displays */
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pricing-plan{
+	border-bottom: 1px solid #e1f1ff; /* * We get border on each div of class pricing plan */
+}
+
+.pricing-plan:last-child{ /* * Selects last element in the html which is in class pricing-plan */
+	border-bottom: none; /* * No border for the last element */
+}
+
+.pricing-img{
+	margin-bottom: 25px;
+	max-width: 100%;
 }
