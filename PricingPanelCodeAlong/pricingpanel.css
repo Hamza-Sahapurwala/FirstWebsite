@@ -65,7 +65,7 @@ body{
 
 }
 
-.panel{
+.panel{ /* ! The main Div */
     background-color: white;
 	border-radius: 10px; /* * Gives us curved borders */
 	padding: 15px 25px; /* * Spacing between the content and border */
@@ -141,6 +141,20 @@ body{
 	color: white;
 }
 
-.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{ /* * Same as the pricing-button */
 	background-color: #269aff;
+}
+
+@media (min-width: 900px){ /* * When the viewport is just above 900px, these styles will be applied (.i.e. On a laptop) */
+	.panel{ /* * We change the div flex direction so that it can fill a bigger screen */
+		flex-direction: row;
+	}
+	.pricing-plan{ /* * We change the column settings so that it looks better when it is in a row */
+		border-bottom: none;
+		border-right: 1px solid #e1f1ff;
+		padding: 25px 50px;
+	}
+	.pricing-plan:last-child{ /* * Last element of pricing-plan will get these styles */
+		border-right: none;
+	}
 }
