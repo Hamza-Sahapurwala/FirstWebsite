@@ -23,3 +23,29 @@ console.log(40+15, 2/5, 8*2, 2-5, 4%2, 3 ** 2); // * It prints: 55 0.4 16 -3 0 9
 // * Any operations with NaN will return NaN
 
 console.log(0/0, 1 + NaN); // * These operations return the value NaN
+
+// ! Variables
+
+// * A storage box were we can store, update & reuse the values
+
+// ? Basic Syntax: let variablename = value;
+
+let variable = 1;
+
+variable+1; // * This is a valid statement but it does not update variable
+
+variable += 1; // * This updates the variable named variable (There also exists -=, *=, /=)
+
+let var2 = variable + 1;
+
+console.log(variable);
+
+console.log(var2); // * I stored the value of variable + 1 in var2
+
+// ! Pre Increment Operator: ++i/--i 
+
+// * The above statement acts like += as it changes the value of the code right then and there (Adding/Subtracting by 1)
+
+// ! Post Increment Operator: i++/i--
+
+// * The above statement doesn't change the value when this statement is reached !!!but!!! when the variable is again accesed, the value is increased/decreaded by 1 
