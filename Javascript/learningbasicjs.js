@@ -75,3 +75,43 @@ let va2 = var1 + 5;
 var var1; // * It is understood by JS that this line should be above the line 71 implicitly (This is known as Hoisting)
 
 console.log('It won\'t return an error, it will give the answer as',va2); // 10
+
+// ! Booleans
+
+// * They have only 2 values: true or false (They are lowercased)
+
+let booleanexample = true;
+
+let booleanexample2 = false;
+
+// ! Dynamic Type Casting
+
+// * JS is similar to python in the way that a variable can can store any type of data
+
+let dtceg = 1; // * Number Data Type
+
+dtceg = false; // * Boolean Data Type
+
+dtceg = 'Hello'; // * String Data Type
+
+// ! Rules for making Identifiers
+
+// * No spaces
+
+// * Numbers can't be the first character
+
+// * Case-Sensitive (a=5 and A=5 are different variables all together)
+
+// * _ can be the first character of a variable
+
+// * All unicode characters except whitespace can be used as characters
+
+// ! Practises for writing Identifiers
+
+// * (IMP and most widely used) Camel-Case: Each new word in the letter must be capitalized except the letter of the first word
+
+let anExampleForCamelCase = 5;
+
+// * Snake-Case: Each new word is seperated by _
+
+let an_example_For_snake_case = 5;
