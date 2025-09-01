@@ -49,3 +49,29 @@ console.log(var2); // * I stored the value of variable + 1 in var2
 // ! Post Increment Operator: i++/i--
 
 // * The above statement doesn't change the value when this statement is reached !!!but!!! when the variable is again accesed, the value is increased/decreaded by 1 
+
+// ! Const
+
+// * Works like let but you can't change the value when you assigned it the first time
+
+// ! DO NOT CHANGE THE VALUE OF CONST
+
+const constantvalueexample = 5;
+
+// ? Const will useful when talking about Arrays and Objects
+
+// ! Var
+
+// * The father of let and const
+
+// * It still works in latest javascript while being this old
+
+// * There is one thing about var, it can use the Hoisting thing of Functions in Javascript
+
+var1 = 5;
+
+let va2 = var1 + 5; 
+
+var var1; // * It is understood by JS that this line should be above the line 71 implicitly (This is known as Hoisting)
+
+console.log('It won\'t return an error, it will give the answer as',va2); // 10
