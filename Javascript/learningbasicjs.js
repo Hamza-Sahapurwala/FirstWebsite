@@ -115,3 +115,41 @@ let anExampleForCamelCase = 5;
 // * Snake-Case: Each new word is seperated by _
 
 let an_example_For_snake_case = 5;
+
+// ! Strings
+
+// * Primitive Data Type in JS
+
+// * Anything in quotes("" or '') is known as a string(You can have empty strings too, just "" or '')
+
+// * Don't do "' or '", these things will cause an error
+
+let stringexample = "Hello & - __ - & 2522";
+
+// * We can put '' in "" and vice versa
+
+let anotherstrexamp = "I said, 'Hello, is it me your looking for?'"
+
+// * The indexing of string in JS is the same as in Python, where the index starts from 0
+
+console.log("The character at the index 3(4th character) of stringexample is", stringexample[3]);
+
+console.log("If we try to access an out of bounds index, we get", stringexample[99]); // undefined
+
+// * We can get the total no. of characters in the string (the length of the string) from using the .length method
+
+console.log("The length of stringexample is", stringexample.length);
+
+// * We can also concatenate 2 strings using + operator
+
+// * Concatenation depends on the order of the strings placed before and after the +
+
+// * If 1 string is placed before, the other string will be added directly after the 1st string's last character 
+
+console.log("The concatenation of stringexample and anotherstrexamp is", stringexample+anotherstrexamp);
+
+// * We can concatenate a Number with a String (JS just converts the Number into a String data type)
+
+console.log("1 + 'hello' is",1 + 'hello');
+
+console.log("'hello' + 1 is",'hello' + 1);
