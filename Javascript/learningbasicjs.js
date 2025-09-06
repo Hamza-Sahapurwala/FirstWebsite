@@ -153,3 +153,47 @@ console.log("The concatenation of stringexample and anotherstrexamp is", stringe
 console.log("1 + 'hello' is",1 + 'hello');
 
 console.log("'hello' + 1 is",'hello' + 1);
+
+// ! String Methods
+
+// ! .length
+
+// * Returns the length of the string in number data type , It's a property of string
+
+console.log("Length of string 'Hello' is", "Hello".length);
+
+// ! .toUpperCase() & .toLowerCase()
+
+// * Both are methods
+
+// * Both return a new string (Also known as Non-Destructive Method)
+
+let upper = "loL"
+
+upper=upper.toUpperCase(); // * I am just giving the new string back to the old variable
+
+let lower = "LOl"
+
+lower=lower.toLowerCase();
+
+console.log(".toUpperCase():",upper,"and .toLowerCase():", lower);
+
+// ! .trim()
+
+// * It's a method
+
+// * Removes any(and only) whitespaces at the beginning and the end of the string 
+
+// * Non-Destructive method (Returns a new string, doesn't affect the original string)
+
+let trim = "       this is core data             ";
+
+console.log("The trimmed data is:", trim.trim());
+
+// ! Chaining Methods Together
+
+// * We can chain together different methods so that we can use lesser no. of line codes
+
+let chain = "            Hello             ";
+
+console.log("Chaining .trim() and .toUpperCase():", chain.trim().toUpperCase()); // * Output: HELLO (with spaces trimmed)
