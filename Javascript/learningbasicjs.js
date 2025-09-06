@@ -197,3 +197,49 @@ console.log("The trimmed data is:", trim.trim());
 let chain = "            Hello             ";
 
 console.log("Chaining .trim() and .toUpperCase():", chain.trim().toUpperCase()); // * Output: HELLO (with spaces trimmed)
+
+// ! String Methods with Arguments
+
+// ! .indexOf(substring that you want to search)
+
+// * Returns index of substring if found in original string, else -1
+
+// * For words, it returns the index of the first letter of the word encountered in the string, else -1
+
+// * It's going to give us the index of the first-time occuring substring 
+
+let indexing = 'catdogboi';
+
+console.log("Index of dog in the string is",indexing.indexOf('dog'),"and index of z in string is",indexing.indexOf('z'));
+
+// ! .slice(starting index, ending index + 1)
+
+// * Returns the sliced string from the given inputs
+
+// * 1 input means it will start the slicing from that index and slice till end of the string
+
+let slicing = "abcdefghijklmnopqrstuvwxyz";
+
+console.log("Getting values from index 1 to 4:",slicing.slice(1,5));
+
+console.log("Getting values from index 7:",slicing.slice(7));
+
+// * If we -ve indexes, it will do length of string - the given index, so it will slice from the end of the string
+
+console.log("Getting values from -5 index:",slicing.slice(-5)); // * Gets us last 5 letters
+
+// ! .replace(original substring, new substring)
+
+// * Returns a string with the replaced substring
+
+// * Only replaces the first occurence of the original substring
+
+let replacing = "haha that's funny"
+
+console.log("Replacing haha with lol:",replacing.replace('haha', 'lol'));
+
+// ! .repeat(no. of times you want to repeat the string)
+
+// * Returns a string which contains the repeated values of the original string
+
+console.log("Repeating the word lol 10 times:","lol".repeat(10));
