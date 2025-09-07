@@ -243,3 +243,29 @@ console.log("Replacing haha with lol:",replacing.replace('haha', 'lol'));
 // * Returns a string which contains the repeated values of the original string
 
 console.log("Repeating the word lol 10 times:","lol".repeat(10));
+
+// ! String Template Literals
+
+// * They are like the format strings in python
+
+// * We know numbers get converted to strings when we concatenate both of them
+
+// * This is an easier way of concatenation
+
+// * We use `(back-ticks), $ and {}
+
+let stl = `x = ${3 + 5}`; // * It evaluates the expressions inside the {} and then prints it out
+
+let fakestl = 'x = ${3 + 5}'; // * or "x = ${3 + 5}"
+
+console.log("Using STL, we get",stl,'while without using it, we get:',fakestl);
+
+let demoquan = 5;
+
+let demoprice = 5;
+
+let demostlexample = 'Apple';
+
+console.log(`You bought ${demoquan} ${demostlexample}(s). Total Amount = ${demoquan * demoprice}.`); 
+
+// * You bought 5 Apple(s). Total Amount = 25.
