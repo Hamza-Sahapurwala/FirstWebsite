@@ -283,3 +283,39 @@ let nullexample = null;
 let undefinedexample;
 
 console.log('The null example will give',null,'and undefined example will give',undefinedexample); // * null & undefined
+
+// ! Math Object
+
+// * It's a built-in Object in JS where we can use it's properties and methods
+
+// * Can be used by: Math.property/(method())
+
+let piexample = Math.PI;
+
+let floor = Math.floor(22.98); // Removes the decimals
+
+let ceil = Math.ceil(34.0001); // Rounds up everything to 1 value higher only if they have decimal points
+
+let round = Math.round(4.5); // Rounds up in the mathematical sense
+
+let power = Math.pow(2, 5); // It gives us answer of 2 ** 5 which is 32
+
+let abs = Math.abs(-453.07);
+
+console.log(`Value of PI: ${piexample}\nValue of floor: ${floor}\nValue of ceil: ${ceil}\nValue of round: ${round}\nValue of power: ${power}\nValue of abs: ${abs}`);
+
+// ! Math.random()
+
+// * Returns a random decimal no. between 0 and 0.99999.... every time it is called
+
+// * We can multiply it by the range we want, add 1(only if we don't want zero and the range no. as an output!!!) and then floor and get random no. in the range we desire
+
+let randomexample1 = Math.floor(Math.random() * 10); // * Will give us random no. from 0 to 9
+
+let randomexample2 = Math.floor(Math.random() * 10) + 1; // * Will give us random no. from 1 to 10
+
+// * If we want a range inbetween 2 no., we can do this:
+
+let randomexample3 = Math.floor(Math.random() * 5) + 10; // * Will give us random no. from 10 to 15
+
+console.log(`Example 1: ${randomexample1}\nExample 2: ${randomexample2}\nExample 3: ${randomexample3}`);
