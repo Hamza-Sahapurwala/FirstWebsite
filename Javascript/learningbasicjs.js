@@ -269,3 +269,17 @@ let demostlexample = 'Apple';
 console.log(`You bought ${demoquan} ${demostlexample}(s). Total Amount = ${demoquan * demoprice}.`); 
 
 // * You bought 5 Apple(s). Total Amount = 25.
+
+// ! null and undefined
+
+// * Both are primitive data types in JS
+
+// * null = Intentional absense of value. Therefore, this must be assigned to a variable
+
+// * undefined = When variables are not assigned anything, they are undefined
+
+let nullexample = null;
+
+let undefinedexample;
+
+console.log('The null example will give',null,'and undefined example will give',undefinedexample); // * null & undefined
