@@ -343,3 +343,21 @@ console.log("Is '40'==40?:", "40"==40); // * Cause both the values are converted
 console.log("Is '40'===40?:", "40"===40); // * As === is used, they are not considred the same type, therefore false
 
 // ? Always use === when comparing types and values!!!!
+
+// ! promt()
+
+// * Runs in console or when connected to html file
+
+// let pro = prompt("Enter a no.");
+
+// * Returns a string of the user input 
+
+// ! Converting String to Number
+
+let strex = "12aaa1abb2"; // * returns the first set of no. it finds (Here only 12 is the output as the other no. are inbetween the characters)
+
+// * If the first character is not a no., it will return NaN
+
+let nex = parseInt(strex);
+
+console.log('Now its a no.:',nex); // * 12
