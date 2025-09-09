@@ -319,3 +319,27 @@ let randomexample2 = Math.floor(Math.random() * 10) + 1; // * Will give us rando
 let randomexample3 = Math.floor(Math.random() * 5) + 10; // * Will give us random no. from 10 to 15
 
 console.log(`Example 1: ${randomexample1}\nExample 2: ${randomexample2}\nExample 3: ${randomexample3}`);
+
+// ! Comparison Operators
+
+// * >,<,<=,>=,!=,==,===,!==,>==,<== and so on
+
+// * They return boolean values: true and false
+
+console.log("Is 1>3?:",1>3); // .* false
+
+console.log("Is -1>=-1?:", -1>=-1);
+
+console.log("Is A > a?:", "A">"a"); // * false because unicode value of A is less than unicode value of a
+
+// * == checks for equality of value and not type!!!!
+
+// * === checks for both equality of value and type!!!
+
+console.log("Is '40'==40?:", "40"==40); // * Cause both the values are converted into strings and then compared
+
+// * 0 and '' are considered the same, 0 and false are considered the same, null and undefined are considered the same in view of ==
+
+console.log("Is '40'===40?:", "40"===40); // * As === is used, they are not considred the same type, therefore false
+
+// ? Always use === when comparing types and values!!!!
