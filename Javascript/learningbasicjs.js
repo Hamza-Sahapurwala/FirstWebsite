@@ -361,3 +361,43 @@ let strex = "12aaa1abb2"; // * returns the first set of no. it finds (Here only 
 let nex = parseInt(strex);
 
 console.log('Now its a no.:',nex); // * 12
+
+// ! Conditional Statements
+
+// * Statements by which we can now use logic in our programs
+
+// ! if Statement
+
+if('' === 0){ // * The below statement only runs when the condition inside the () brackets is true
+    console.log("This line will never print");
+}
+
+// ! else if Statement
+
+// * If the 'if' statement doesn't run, the execution comes to check this conditional statement
+
+// * We can have multiple else if statements
+
+// * else if MUST always come after an if statement
+
+else if('' == 0){
+    console.log("'' will be == 0 as == checks only equality, not type");
+}
+
+else if(0>1){
+    console.log('This will also never run');
+}
+
+// ! else Statement
+
+// * If the if and all the else if statements are false, only then will the else block will run
+
+else{
+    console.log('Why am I running?');
+}
+
+// * We can have only 1 if and else statement but multipe else if statements for any logic statements that you are writing
+
+// * We can write an if statement and an else right after and not use else if statement(s) (if only the logic we are trying to code says so)
+
+// * We can not use an else statement alone
