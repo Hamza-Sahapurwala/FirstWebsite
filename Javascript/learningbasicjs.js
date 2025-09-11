@@ -420,3 +420,13 @@ if(nestedpassword.length >= 8){
 else{
     console.log('Password is not 8 characters long!!!');
 }
+
+// ! Values that are considered false in JS
+
+// * false, null, undefined, 0, '', NaN
+
+// * Every other value except in the line above are considered to be true
+
+// * We can put if('') or if(0) or the other false values and that if block will not run as '' and 0 is considered false
+
+// * if(-ve no.) will run the if block cause -ve no. are considered to be true values
