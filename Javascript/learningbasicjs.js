@@ -466,3 +466,29 @@ if(null || 1=='1' && 1===1){ // * We can use both && and || in 1 statement
 else{
     console.log('This block runs if all the conditions are false');
 }
+
+// ! Logical NOT
+
+//  * Syntax: !condition
+
+// * If the condition was true, the above statement makes it false and vice versa
+
+if(!null){
+    console.log('This block will run only if the negation of the condition is true');
+}
+else{
+    console.log('This block will run only if the negation of the condition is false');
+}
+
+// ! Precedence of Logical Operators
+
+// * If !, && and || are used in the same line, they will follow this precedence:
+
+/* Highest(The first to run): !
+    Second: &&
+    Lowest(Last to run): || */
+
+if (1==='1' || !null && 1) {
+    console.log('Highest Precedense is !, Nest is && and then ||');
+    
+}
