@@ -490,5 +490,27 @@ else{
 
 if (1==='1' || !null && 1) {
     console.log('Highest Precedense is !, Nest is && and then ||');
+}
+
+// ! Switch
+
+// * Logical Operation
+
+// * We can check if the key matches to any case or not
+
+let switchkey = 'Monday';
+
+switch (switchkey) {
+    case 'Monday':
+        console.log('EW');
+        break; // * We use break so that the execution doesn't execute the next case blocks (It's very IMP to keep it in the end of each case blocks)
+
+    case 'Saturday': // * We can use the break statement logic to write statements like these so that we get same outputs for different cases
+    case 'Sunday':
+        console.log('YAY');
+        break;
     
+    default: // * If none of the case blocks run, this block will
+        console.log('Nice day');
+        break;
 }
