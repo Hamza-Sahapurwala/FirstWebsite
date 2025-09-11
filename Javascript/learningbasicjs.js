@@ -322,7 +322,7 @@ console.log(`Example 1: ${randomexample1}\nExample 2: ${randomexample2}\nExample
 
 // ! Comparison Operators
 
-// * >,<,<=,>=,!=,==,===,!==,>==,<== and so on
+// * >,<,<=,>=,!=,==,===,!==,>=,<= and so on
 
 // * They return boolean values: true and false
 
@@ -401,3 +401,22 @@ else{
 // * We can write an if statement and an else right after and not use else if statement(s) (if only the logic we are trying to code says so)
 
 // * We can not use an else statement alone
+
+// ! Nested Conditionals
+
+// * As it's in the name, there are conditionals inside other conditionals
+
+let nestedpassword = 'abcdefghi';
+
+if(nestedpassword.length >= 8){
+    if(nestedpassword.indexOf(' ') === -1){
+        console.log('Password follows the requirements');
+    }
+    else{
+        console.log('Password has a space!!! Do not do that!');
+    }
+}
+
+else{
+    console.log('Password is not 8 characters long!!!');
+}
