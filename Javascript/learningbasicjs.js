@@ -452,3 +452,17 @@ if(nestedpassword >= 8 && nestedpassword.indexOf(' ')){
 else{
     console.log('Not Valid');
 }
+
+// ! Logical OR
+
+// * Syntax: condition1 || condition2 || condition3 || ......
+
+// * Any 1 condition has to be true for the above statement to be true, else false
+
+if(null || 1=='1' && 1===1){ // * We can use both && and || in 1 statement
+    console.log('This block runs only if any 1 of the conditions are true');
+}
+
+else{
+    console.log('This block runs if all the conditions are false');
+}
