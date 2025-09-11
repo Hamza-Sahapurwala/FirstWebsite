@@ -430,3 +430,25 @@ else{
 // * We can put if('') or if(0) or the other false values and that if block will not run as '' and 0 is considered false
 
 // * if(-ve no.) will run the if block cause -ve no. are considered to be true values
+
+// ! Logical AND
+
+// * Syntax: condition1 && condition2 && condition3 && ....
+
+// * All the conditons must be true for that statement to return true, else false
+
+if(1>=0 && 1=='1'){
+    console.log('This block will only run if all the conditions are true');
+}
+else{
+    console.log('This block will run if the if block is false');
+}
+
+// * We can make the use Nested Conditional code much better with this
+
+if(nestedpassword >= 8 && nestedpassword.indexOf(' ')){
+    console.log('Valid');
+}
+else{
+    console.log('Not Valid');
+}
