@@ -514,3 +514,21 @@ switch (switchkey) {
         console.log('Nice day');
         break;
 }
+
+// ! Arrays in JS
+
+// * Collection of Data of similar or any data type
+
+let arrex = []; // * Empty array
+
+// ! In strings, we can't do a[0] = some new value but in arrays we can
+
+console.log(typeof arrex); // * Arrays are considered as Object type in JS (Objects will be covered later)
+
+arrex = ['0th index value here', 5, true, null]; // * Example of an array
+
+console.log(arrex,arrex[3], arrex[5]); // * arrex[5] returns undefined
+
+arrex[2] = false; // * We can change any value of the array using it's index
+
+console.log('Length of arrex is', arrex.length);
