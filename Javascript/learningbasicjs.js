@@ -532,3 +532,27 @@ console.log(arrex,arrex[3], arrex[5]); // * arrex[5] returns undefined
 arrex[2] = false; // * We can change any value of the array using it's index
 
 console.log('Length of arrex is', arrex.length);
+
+// ! Indexing in Arrays
+
+// * Arrays are indexed from 0 to the length - 1
+
+// * If any value is given out of bounds of the index, it will return undefined
+
+let arrayindex1 = arrex[1]; // * Will return 5
+
+let arrayindex0and5thindexofstring = arrex[0][5]; // * Will return 'n'(as n is present at the 5th index of the 0th index of arrex)
+
+// * Unlike strings, we can change the value of the elements inside the array
+
+arrex[0] = 'This is shorter';
+
+console.log(arrex);
+
+// * We are able to add a value at any index, just that if nothing is defined just before that index, it will tell us that it's empty
+
+// * And the length of the array increases
+
+arrex[5] = 10;
+
+console.log('The array now becomes this',arrex,'with length',arrex.length,'while the empty slot will return', arrex[4]); // *undefined
